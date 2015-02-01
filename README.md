@@ -1,3 +1,30 @@
+# Brian Buchalter's submission
+
+* Available for review at: http://bbuchalter.github.io/frontend-nanodegree-mobile-portfolio/
+* [Mobile PSI score](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fbbuchalter.github.io%2Ffrontend-nanodegree-mobile-portfolio%2F&tab=mobile): 94
+* [Desktop PSI score](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fbbuchalter.github.io%2Ffrontend-nanodegree-mobile-portfolio%2F&tab=desktop): 95
+* Frame performance sample from scrolling on [pizza page](http://bbuchalter.github.io/frontend-nanodegree-mobile-portfolio/views/pizza.html):
+```
+Average time to generate last 10 frames: 7.218500017188489ms
+Average time to generate last 10 frames: 2.3846000083722174ms
+Average time to generate last 10 frames: 2.222500031348318ms
+Average time to generate last 10 frames: 2.2232999792322516ms
+```
+* Time to resize pizzas: `1.6900000628083944ms`
+
+## Resources Used
+* [Grading Rubric](https://www.udacity.com/course/viewer/#!/c-nd001/l-2735848561/m-2686388535)
+* [Website Performance Optimization course @ Udacity](https://www.udacity.com/course/viewer#!/c-ud884-nd)
+* [#perfmatters: 60fps layout and rendering - Chrome Dev Summit 2013 (Tom Wiltzius and Nat Duca)](https://www.youtube.com/watch?v=YyQYhhy1dZI)
+* [Profiling Long Paint Times with DevTools' Continuous Painting Mode](http://updates.html5rocks.com/2013/02/Profiling-Long-Paint-Times-with-DevTools-Continuous-Painting-Mode)
+* [Improving the CSS performance of fixed position elements](http://benfrain.com/improving-css-performance-fixed-position-elements/)
+* https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet
+
+## Honor Statement
+I hereby confirm that this submission is my work. I have cited above the origins of any parts of the submission that were taken from Websites, books, forums, blog posts, github repositories, etc. By including this in my email, I understand that I will be expected to explain my work in a video call with a Udacity coach before I can receive my verified certificate.
+
+
+
 ## Website Performance Optimization portfolio project
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
