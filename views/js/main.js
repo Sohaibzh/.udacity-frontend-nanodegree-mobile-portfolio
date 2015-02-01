@@ -373,8 +373,6 @@ var pizzaElementGenerator = function(i) {
   pizzaDescriptionContainer = document.createElement("div");
 
   pizzaContainer.classList.add("randomPizzaContainer");
-  pizzaContainer.style.width = "33.33%";
-  pizzaContainer.style.height = "325px";
   pizzaContainer.id = "pizza" + i;                // gives each pizza element a unique id
   pizzaImageContainer.classList.add("col-md-6");
 
@@ -397,6 +395,8 @@ var pizzaElementGenerator = function(i) {
 
   return pizzaContainer;
 };
+
+var resizePizzaCSSRuleIndex;
 
 // resizePizzas(size) is called when the slider in the "Our Pizzas" section of the website moves.
 var resizePizzas = function(size) { 
@@ -452,10 +452,15 @@ var resizePizzas = function(size) {
   function changePizzaSizes(size) {
     var nodeList = document.querySelectorAll(".randomPizzaContainer");
     var dx = determineDx(nodeList[0], size);
-    for (var i = 0; i < nodeList.length; i++) {
-      var newwidth = (nodeList[i].offsetWidth + dx) + 'px';
-      nodeList[i].style.width = newwidth;
+    var newwidth = (nodeList[0].offsetWidth + dx) + 'px';
+    var styleCSS = document.styleSheets[0];
+    if(typeof(resizePizzaCSSRuleIndex) === "undefined") {
+      resizePizzaCSSRuleIndex = styleCSS.rules.length;
     }
+    else {
+      styleCSS.deleteRule(resizePizzaCSSRuleIndex);
+    }
+    styleCSS.insertRule(".randomPizzaContainer { width: " + newwidth + "; }", resizePizzaCSSRuleIndex);
   }
 
   changePizzaSizes(size);
