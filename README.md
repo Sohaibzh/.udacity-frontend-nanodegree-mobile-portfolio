@@ -12,6 +12,10 @@ Average time to generate last 10 frames: 2.2232999792322516ms
 ```
 * Time to resize pizzas: `1.6900000628083944ms`
 
+# Optimizations made for pizza.html in views/js/main.js
+* Optimization was mostly attributable to move each pizza onto it's own layer by setting `backface-visibility: hidden` in https://github.com/bbuchalter/frontend-nanodegree-mobile-portfolio/commit/0708bc226754b7b5f1578a901748b7e61aaae24f
+* Additionally, using CSS to specify position was more efficient than using JS in https://github.com/bbuchalter/frontend-nanodegree-mobile-portfolio/commit/d43ebe87845e823144f313fb57f28b708321121e
+
 ## Resources Used
 * [Grading Rubric](https://www.udacity.com/course/viewer/#!/c-nd001/l-2735848561/m-2686388535)
 * [Website Performance Optimization course @ Udacity](https://www.udacity.com/course/viewer#!/c-ud884-nd)
